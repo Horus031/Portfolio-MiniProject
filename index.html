@@ -4,96 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         table, th, td {
             border:1px solid black;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h2>My Portfolio</h2>
-        <img src="" alt="My Logo">
-        <nav>
+    <div class="container">
+        <header class="header">
+            <img src="/assets/myLogo.png" alt="My Logo" class="header__img">
+            <h3 class="header__title">H o r u s</h3>
+            <div class="navbar-wrapper">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items">
+                            <a class="header__navbar-items-link" href="">Home</a>
+                        </li>
+                        <li class="header__navbar-items">
+                            <a class="header__navbar-items-link" href="">About</a>
+                        </li>
+                        <li class="header__navbar-items">
+                            <a class="header__navbar-items-link" href="">Blogs</a>
+                        </li>
+                        <li class="header__navbar-items">
+                            <a class="header__navbar-items-link" href="">Experience</a
+                                ></li>
+                        <li class="header__navbar-items">
+                            <a class="header__navbar-items-link" href="">Video</a>
+                        </li>
+                        <li class="header__navbar-items">
+                            <a class="header__navbar-items-link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section class="about">
+            <div class="about__desc">
+                <h1>About Me</h1>
+                <h1>Hello, I am Horus Weaver, I am Fullstack Developer</h1>
+                <p>My main major is Computer Science</p>
+            </div>
+            <img class="about__img" src="/assets/myLogo.png" alt="My Image">
+        </section>
+    
+        <section class="blog">
+            <h1 class="blog__title">Blog</h1>
+            <article class="blog__article">
+                <h3 class="article__title">HTML/CSS</h3>
+                <p class="article__desc">All about HTML and CSS</p>
+                <img class="article__img" src="/assets/html-css.jpg" alt="Article Images1">
+            </article>
+            <article class="blog__article">
+                <h3 class="article__title">JavaScript</h3>
+                <p class="article__desc">All about JavaScript</p>
+                <img class="article__img" src="/assets/js.png" alt="Article Images2">
+            </article>
+        </section>
+    
+        <section class="experience">
+            <h1 class="experience__title">Experience</h1>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>University/Company</th>
+                    <th>Position</th>
+                    <th>Main Task</th>
+                </tr>
+                <tr>
+                    <td>2023 - 2027</td>
+                    <td>University of Greenwich</td>
+                    <td>Students</td>
+                    <td>Major in Computer Science</td>
+                </tr>
+            </table>
+        </section>
+    
+        <section>
+            Introduction Video
+            <video src="https://www.youtube.com/watch?v=E8PnFIp_A8s"></video>
+            <p>Descripttion about Video</p>
+        </section>
+    
+        <section>
+            Contact Me
+            <form action="">
+                <fieldset style="display: flex; flex-direction: column; width: 30%;">
+                    <legend>Contact Me:</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="tarea">Feedback</label>
+                    <textarea name="tarea" id="tarea" rows="10"></textarea>
+                    <input type="button" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    
+        <footer>
+            Copyright
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blogs</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Video</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">LinkedIn</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section>
-        About
-        <img src="" alt="My Image">
-        <h1>Hello, I am Horus Weaver, I am Fullstack Developer</h1>
-        <p>My main major is Computer Science</p>
-    </section>
-
-    <section>
-        Blog
-        <article>
-            <h3>Title</h3>
-            <p>Description</p>
-            <img src="" alt="Article Images1">
-        </article>
-        <article>
-            <h3>Title</h3>
-            <p>Description</p>
-            <img src="" alt="Article Images2">
-        </article>
-    </section>
-
-    <section>
-        Experience
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>University/Company</th>
-                <th>Position</th>
-                <th>Main Task</th>
-            </tr>
-            <tr>
-                <td>2023 - 2027</td>
-                <td>University of Greenwich</td>
-                <td>Students</td>
-                <td>Major in Computer Science</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        Introduction Video
-        <video src=""></video>
-        <p>Descripttion about Video</p>
-    </section>
-
-    <section>
-        Contact Me
-        <form action="">
-            <fieldset style="display: flex; flex-direction: column; width: 30%;">
-                <legend>Contact Me:</legend>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="tarea">Feedback</label>
-                <textarea name="tarea" id="tarea" rows="10"></textarea>
-                <input type="button" value="Submit">
-            </fieldset>
-        </form>
-    </section>
-
-    <footer>
-        Copyright
-        <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">LinkedIn</a></li>
-        </ul>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
