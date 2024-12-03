@@ -14,9 +14,17 @@
 
 <body>
     <div class="container">
+        
+
         <header class="header">
-            <img src="/assets/myLogo.png" alt="My Logo" class="header__img">
-            <h3 class="header__title">H o r u s</h3>
+            <div class="navbar__btn">
+                <i class="fa-solid fa-bars navbar__btn-icon"></i>
+                <img src="/assets/myLogo.png" alt="My Logo" class="navbar__img">
+            </div>
+            <div class="header__wrapper">
+                <h3 class="header__title">H o r u s</h3>
+                <img src="/assets/myLogo.png" alt="My Logo" class="header__img">
+            </div>
             <div class="navbar-wrapper">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
@@ -42,58 +50,60 @@
                 </nav>
             </div>
         </header>
-    
+        <hr>
+
+        <!-- About Section -->
         <section class="about">
             <div class="about__desc">
                 <h1>About Me</h1>
                 <h1>Hello, I am Horus Weaver, I am Fullstack Developer</h1>
                 <p>My main major is Computer Science</p>
             </div>
-            <img class="about__img" src="/assets/myLogo.png" alt="My Image">
+            <img class="about__img" src="/assets/myLogo.png" alt="My Image" width="200" height="200">
         </section>
     
         <section class="blog">
             <h1 class="blog__title">Blog</h1>
             <article class="blog__article">
                 <h3 class="article__title">HTML/CSS</h3>
-                <p class="article__desc">All about HTML and CSS</p>
+                <a href="#" class="article__desc">All about HTML and CSS</a>
                 <img class="article__img" src="/assets/html-css.jpg" alt="Article Images1">
             </article>
             <article class="blog__article">
                 <h3 class="article__title">JavaScript</h3>
-                <p class="article__desc">All about JavaScript</p>
+                <a href="#" class="article__desc">All about JavaScript</a>
                 <img class="article__img" src="/assets/js.png" alt="Article Images2">
             </article>
         </section>
     
         <section class="experience">
             <h1 class="experience__title">Experience</h1>
-            <table>
-                <tr>
-                    <th>Time</th>
-                    <th>University/Company</th>
-                    <th>Position</th>
-                    <th>Main Task</th>
+            <table class="experience__table">
+                <tr class="experience__table-heading">
+                    <th class="table-heading__items">Time</th>
+                    <th class="table-heading__items">University/Company</th>
+                    <th class="table-heading__items">Position</th>
+                    <th class="table-heading__items">Main Task</th>
                 </tr>
-                <tr>
-                    <td>2023 - 2027</td>
-                    <td>University of Greenwich</td>
-                    <td>Students</td>
-                    <td>Major in Computer Science</td>
+                <tr class="experience__table-body">
+                    <td class="table-body__items">2023 - 2027</td>
+                    <td class="table-body__items">University of Greenwich</td>
+                    <td class="table-body__items">Students</td>
+                    <td class="table-body__items">Major in Computer Science</td>
                 </tr>
             </table>
         </section>
     
-        <section>
-            Introduction Video
-            <video src="https://www.youtube.com/watch?v=E8PnFIp_A8s"></video>
+        <section class="video">
+            <h1 class="video__title">Video</h1>
+            <video width="240" height="150" autoplay controls src="https://www.youtube.com/watch?v=E8PnFIp_A8s"></video>
             <p>Descripttion about Video</p>
         </section>
     
-        <section>
+        <section class="contact">
             Contact Me
-            <form action="">
-                <fieldset style="display: flex; flex-direction: column; width: 30%;">
+            <form action="" class="contact__form">
+                <fieldset class="contact__form-fieldset">
                     <legend>Contact Me:</legend>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
@@ -105,15 +115,25 @@
                 </fieldset>
             </form>
         </section>
-    
-        <footer>
+        <hr>
+        <hr>
+        <footer class="footer">
             Copyright
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">LinkedIn</a></li>
+            <ul class="footer__list">
+                <li class="footer__list-items">
+                    <a class="footer__list-items-link" href="https://www.facebook.com/horuss.if/" target="_blank">Facebook</a>
+                </li>
+                <li class="footer__list-items">
+                    <a class="footer__list-items-link" href="" target="_blank">Instagram</a>
+                </li>
+                <li class="footer__list-items">
+                    <a class="footer__list-items-link" href="" target="_blank">LinkedIn</a>
+                </li>
             </ul>
         </footer>
     </div>
+
+
+    <script src="https://kit.fontawesome.com/1792eb4629.js" crossorigin="anonymous"></script>
 </body>
 </html>
