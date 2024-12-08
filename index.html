@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
         table, th, td {
@@ -13,8 +13,6 @@
 </head>
 
 <body>
-    <div class="bg-image"></div>
-
     <div class="container">
         <header class="header">
             <div class="navbar__btn">
@@ -49,12 +47,10 @@
                 </nav>
             </div>
         </header>
-        <hr>
 
         <!-- About Section -->
         <section class="about">
             <div class="about__desc">
-                <h1>About Me</h1>
                 <h1>Hello, I am Horus Weaver, I am Fullstack Developer</h1>
                 <p>My main major is Computer Science</p>
             </div>
@@ -62,43 +58,30 @@
         </section>
     
         <section class="blog">
-            <h1 class="blog__title">Blog</h1>
+            <h1 class="blog__title">My Project</h1>
             <div class="blog__article-wrapper">
                 <article class="blog__article">
-                    <h3 class="article__title">HTML/CSS</h3>
-                    <a href="#" class="article__desc">All about HTML and CSS</a>
-                    <img class="article__img" src="/assets/html-css.jpg" alt="Article Images1">
+                    <a href="#" class="article__desc">
+                        <h3 class="article__title">HTML/CSS</h3>
+                        <div class="article__img" style="background-image: url('/assets/html-css.jpg');"></div>
+                        <p>All about HTML and CSS</p>
+                    </a>
                 </article>
                 <article class="blog__article">
-                    <h3 class="article__title">JavaScript</h3>
-                    <a href="#" class="article__desc">All about JavaScript</a>
-                    <img class="article__img" src="/assets/js.png" alt="Article Images2">
+                    <a href="#" class="article__desc">
+                        <h3 class="article__title">HTML/CSS</h3>
+                        <div class="article__img" style="background-image: url('/assets/js.png');"></div>
+                        <p>All about HTML and CSS</p>
+                    </a>
                 </article>
                 <article class="blog__article">
-                    <h3 class="article__title">JavaScript</h3>
-                    <a href="#" class="article__desc">All about JavaScript</a>
-                    <img class="article__img" src="/assets/js.png" alt="Article Images2">
+                    <a href="#" class="article__desc">
+                        <h3 class="article__title">HTML/CSS</h3>
+                        <div class="article__img" style="background-image: url('/assets/js.png');"></div>
+                        <p>All about HTML and CSS</p>
+                    </a>
                 </article>
-                <article class="blog__article">
-                    <h3 class="article__title">JavaScript</h3>
-                    <a href="#" class="article__desc">All about JavaScript</a>
-                    <img class="article__img" src="/assets/js.png" alt="Article Images2">
-                </article>
-                <article class="blog__article">
-                    <h3 class="article__title">JavaScript</h3>
-                    <a href="#" class="article__desc">All about JavaScript</a>
-                    <img class="article__img" src="/assets/js.png" alt="Article Images2">
-                </article>
-                <article class="blog__article">
-                    <h3 class="article__title">JavaScript</h3>
-                    <a href="#" class="article__desc">All about JavaScript</a>
-                    <img class="article__img" src="/assets/js.png" alt="Article Images2">
-                </article>
-                <article class="blog__article">
-                    <h3 class="article__title">JavaScript</h3>
-                    <a href="#" class="article__desc">All about JavaScript</a>
-                    <img class="article__img" src="/assets/js.png" alt="Article Images2">
-                </article>
+                
             </div>
         </section>
     
@@ -123,37 +106,43 @@
         <section class="video">
             <h1 class="video__title">Video</h1>
             <video width="240" height="150" autoplay controls src="https://www.youtube.com/watch?v=E8PnFIp_A8s"></video>
-            <p>Descripttion about Video</p>
+            <p>Description about Video</p>
         </section>
     
         <section class="contact">
-            Contact Me
             <form action="" class="contact__form">
-                <fieldset class="contact__form-fieldset">
-                    <legend>Contact Me:</legend>
+                    Contact Me
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" placeholder="Your name">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="tarea">Feedback</label>
+                    <input type="email" name="email" id="email" placeholder="Your email">
+                    <label for="tarea">Message</label>
                     <textarea name="tarea" id="tarea" rows="10"></textarea>
-                    <input type="button" value="Submit">
-                </fieldset>
+                    <input type="button" value="Send">
             </form>
         </section>
 
         
         <footer class="footer">
-            Copyright
+            <span class="footer__copyright">&copy; Copyright by H o r u s</span>
             <ul class="footer__list">
                 <li class="footer__list-items">
-                    <a class="footer__list-items-link" href="https://www.facebook.com/horuss.if/" target="_blank">Facebook</a>
+                    <a class="footer__list-items-link" href="https://www.facebook.com/horuss.if/" target="_blank">
+                        <i class="fa-brands fa-facebook social-icons"></i>
+                        Facebook
+                    </a>
                 </li>
                 <li class="footer__list-items">
-                    <a class="footer__list-items-link" href="" target="_blank">Instagram</a>
+                    <a class="footer__list-items-link" href="" target="_blank">
+                        <i class="fa-brands fa-instagram social-icons"></i>
+                        Instagram
+                    </a>
                 </li>
                 <li class="footer__list-items">
-                    <a class="footer__list-items-link" href="" target="_blank">LinkedIn</a>
+                    <a class="footer__list-items-link" href="" target="_blank">
+                        <i class="fa-brands fa-github social-icons"></i>
+                        GitHub
+                    </a>
                 </li>
             </ul>
         </footer>
